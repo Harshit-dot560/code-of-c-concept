@@ -45,14 +45,14 @@ int main()
         cin >> x;
         v.push_back(x);
     }
-    
-    vector<int> v2 = v;   // O(n) copy pass hua
-v2.push_back(5);
-printvec(v);
-printvec(v2);
-    vector<int> &v3 = v;   // reference pass hua
-v3.push_back(7);
-printvec(v);
-printvec(v3);
+
+    vector<int> v2 = v; // O(n) copy pass hua
+    v2.push_back(5);
+    printvec(v);
+    printvec(v2);
+    vector<int> &v3 = v; // reference pass hua
+    v3.push_back(7);
+    printvec(v);
+    printvec(v3);
     return 0;
 }
